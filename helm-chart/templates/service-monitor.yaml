@@ -1,0 +1,14 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: petclinic-monitor
+  labels:
+    release: dev-prometheus  # Match your Prometheus instance
+spec:
+  selector:
+    matchLabels:
+      app: {{ .Chart.Name }}
+  endpoints:
+  - port: jmx-metrics
+    interval: 15s
+    path: /metrics

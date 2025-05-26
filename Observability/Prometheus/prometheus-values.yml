@@ -1,0 +1,22 @@
+grafana:
+  enabled: false
+
+# prometheus:
+#   prometheusSpec:
+#     serviceMonitorSelector:
+#       matchLabels:
+#         serviceMonitorSelectorLabell: my-test-prometheus
+#     podMonitorSelector:
+#       matchLabels:
+#         podMonitorSelectorLabell: my-test-prometheus
+
+# prometheus-node-exporter:
+#   podLabels:
+#     jobLabel: node-exporter
+#     serviceMonitorSelectorLabell: my-test-prometheus
+
+# kube-state-metrics:
+#   prometheus:
+#     monitor:
+#       additionalLabels:
+#         serviceMonitorSelectorLabell: my-test-prometheus
