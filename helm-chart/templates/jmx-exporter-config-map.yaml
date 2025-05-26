@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: jmx-exporter-config
+data:
+  exporter.yaml: |-
+    hostPort: localhost:1099
+    rules:
+      - pattern: ".*"

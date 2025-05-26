@@ -1,0 +1,8 @@
+# Default values for petclinic
+replicaCount: 1
+
+image:
+  repository: springcommunity/spring-framework-petclinic  # Default image name
+  tag: latest                                             # Default image tag
+  pullPolicy: IfNotPresent
+
